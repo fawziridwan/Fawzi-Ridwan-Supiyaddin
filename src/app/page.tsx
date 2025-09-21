@@ -5,6 +5,7 @@ import { ProfessionalSummary } from '@/components/professional-summary';
 import { WorkExperience } from '@/components/work-experience';
 import { Education } from '@/components/education';
 import { Separator } from '@/components/ui/separator';
+import { SkillsQualifications } from '@/components/skills-qualifications';
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
           <ProfessionalSummary summary={profileData.summary} />
           <Separator className="my-8" />
           <WorkExperience experience={profileData.experience} />
+          <Separator className="my-8" />
+          <SkillsQualifications skills={profileData.skills} />
           <Separator className="my-8" />
           <Education education={profileData.education} />
         </div>

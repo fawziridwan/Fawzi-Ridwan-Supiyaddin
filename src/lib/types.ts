@@ -10,7 +10,7 @@ export type Profile = {
   summary: string;
   experience: Experience[];
   education: Education[];
-  skills: Skill[];
+  skills: Skills;
 };
 
 export type Experience = {
@@ -30,7 +30,16 @@ export type Education = {
   endDate: string;
 };
 
-export type Skill = {
-  name:string;
-  proficiency: number; // Proficiency from 1 to 5
+export type Skills = {
+  management: string[];
+  implementation: {
+    languages: string[];
+    frameworks: string[];
+    databases: string[];
+    logs: string[];
+  };
+  additional: {
+    languages: string[];
+    reporting: string[];
+  }
 };

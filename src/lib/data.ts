@@ -64,28 +64,28 @@ export const profileData: Profile = {
       endDate: "2013"
     }
   ],
-  skills: [
-    { name: 'SDLC', proficiency: 5 },
-    { name: 'Agile & Scrum', proficiency: 5 },
-    { name: 'Blackbox Testing', proficiency: 5 },
-    { name: 'SIT Testing', proficiency: 5 },
-    { name: 'UAT Testing', proficiency: 5 },
-    { name: 'Java', proficiency: 4 },
-    { name: 'Python', proficiency: 4 },
-    { name: 'JavaScript', proficiency: 4 },
-    { name: 'Appium', proficiency: 4 },
-    { name: 'Cypress.js', proficiency: 4 },
-    { name: 'Node.js', proficiency: 3 },
-    { name: 'Katalon Studio', proficiency: 3 },
-    { name: 'PHP', proficiency: 2 },
-    { name: 'Vue.js', proficiency: 2 },
-    { name: 'Wordpress', proficiency: 2 },
-    { name: 'Jira', proficiency: 5 },
-    { name: 'Testrail', proficiency: 4 },
-    { name: 'PostgreSQL', proficiency: 4 },
-    { name: 'MongoDB', proficiency: 3 },
-    { name: 'MySQL', proficiency: 4 },
-    { name: 'Dbeaver', proficiency: 4 },
-    { name: 'Kibana', proficiency: 3 }
-  ]
+  skills: {
+    management: [
+      "Software Development Life Cycle",
+      "Waterfall methodologies",
+      "Scrum, Agile methodologies",
+      "Blackbox Testing",
+      "Grey Box Testing",
+      "UAT Testing",
+      "SIT Testing",
+      "Sanity & Regression Testing",
+      "Detail Orientation",
+      "Agile Testing"
+    ],
+    implementation: {
+      languages: ["Java", "Python", "Javascript"],
+      frameworks: ["Appium", "Webdriver.io", "Cypress.Js", "Mocha.js", "Robot Framework", "Node.Js", "Katalon Studio"],
+      databases: ["MySQL", "PostgreSQL", "MongoDB", "Dbeaver"],
+      logs: ["WinSCP", "Telnet", "Kibana"]
+    },
+    additional: {
+      languages: ["PHP", "Vue.Js", "Wordpress"],
+      reporting: ["Jira", "Zephyr", "Testrail", "Spreadsheet"]
+    }
+  }
 };
