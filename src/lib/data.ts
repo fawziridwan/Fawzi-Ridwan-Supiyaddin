@@ -24,6 +24,18 @@ export const profileData: Profile = {
       ]
     },
     {
+      title: "Quality Assurance Analyst",
+      company: "PT Smoets Teknologi Outsourcing",
+      location: "Bandung, Indonesia",
+      startDate: "Nov 2018",
+      endDate: "Jun 2024",
+      description: [
+        "Served as QA Analyst for Financial Technology (Fintech), supporting core payment migration, P2P lending, and consumer applications.",
+        "Worked on various projects including My Republic's Project Management, Marketing Automation Tools, HRIS Applications, One of above Digital Banking in Singapore & Indonesia, and more.",
+        "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
+      ]
+    },
+    {
       title: "Test Engineer",
       company: "PT Code Development Indonesia",
       location: "Jakarta, Indonesia",
@@ -34,18 +46,6 @@ export const profileData: Profile = {
         "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
         "Conducted testing on Android & iOS mobile applications.",
         "Utilized Selenium and Appium with Java for test automation."
-      ]
-    },
-    {
-      title: "Quality Assurance Analyst",
-      company: "PT Smoets Teknologi Outsourcing",
-      location: "Bandung, Indonesia",
-      startDate: "Nov 2018",
-      endDate: "Jun 2024",
-      description: [
-        "Served as QA Analyst for Financial Technology (Fintech), supporting core payment migration, P2P lending, and consumer applications.",
-        "Worked on various projects including My Republic's Project Management, Marketing Automation Tools, HRIS Applications, One of above Digital Banking in Singapore & Indonesia, and more.",
-        "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
       ]
     }
   ],
