@@ -12,31 +12,6 @@ export const profileData: Profile = {
   summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
     {
-      title: "Test Engineer",
-      company: "PT Code Development Indonesia",
-      location: "Jakarta, Indonesia",
-      startDate: "Jul 2024",
-      endDate: "Present",
-      description: [
-        "Senior SIT Tester for PT Bank Danamon Tbk, supporting D-Bank Pro 2.0.",
-        "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
-        "Conducted testing on Android & iOS mobile applications.",
-        "Utilized Selenium and Appium with Java for test automation."
-      ]
-    },
-    {
-      title: "Quality Assurance Analyst",
-      company: "PT Smoets Teknologi Outsourcing",
-      location: "Bandung, Indonesia",
-      startDate: "Nov 2018",
-      endDate: "Jun 2024",
-      description: [
-        "Served as QA Analyst for Financial Technology (Fintech), supporting core payment migration, P2P lending, and consumer applications.",
-        "Worked on various projects including My Republic's Project Management, Marketing Automation Tools, HRIS Applications, One of above Digital Banking in Singapore & Indonesia, and more.",
-        "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
-      ]
-    },
-    {
       title: "Frontend Developer",
       company: "Geeksfarm",
       location: "Bandung, Indonesia",
@@ -58,6 +33,31 @@ export const profileData: Profile = {
         "Support Development Web application in Hongkong-based Cleaning Service Management using Vue.js, Graphql, Amazon RDS(MySQL) & Serverless",
         "Meet with CEO for Research & Learning WordPress with Elementor & Custom Post type & Taxonomy for Development WordPress Project",
         "Development loyalty point feature & reporting for Project Website Jewellery using WooCommerce"
+      ]
+    },
+    {
+      title: "Quality Assurance Analyst",
+      company: "PT Smoets Teknologi Outsourcing",
+      location: "Bandung, Indonesia",
+      startDate: "Nov 2018",
+      endDate: "Jun 2024",
+      description: [
+        "Served as QA Analyst for Financial Technology (Fintech), supporting core payment migration, P2P lending, and consumer applications.",
+        "Worked on various projects including My Republic's Project Management, Marketing Automation Tools, HRIS Applications, One of above Digital Banking in Singapore & Indonesia, and more.",
+        "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
+      ]
+    },
+    {
+      title: "Test Engineer",
+      company: "PT Code Development Indonesia",
+      location: "Jakarta, Indonesia",
+      startDate: "Jul 2024",
+      endDate: "Present",
+      description: [
+        "Senior SIT Tester for PT Bank Danamon Tbk, supporting D-Bank Pro 2.0.",
+        "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
+        "Conducted testing on Android & iOS mobile applications.",
+        "Utilized Selenium and Appium with Java for test automation."
       ]
     }
   ],
