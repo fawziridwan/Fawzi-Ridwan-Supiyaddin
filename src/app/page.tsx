@@ -4,7 +4,6 @@ import { CvHeader } from '@/components/cv-header';
 import { ProfessionalSummary } from '@/components/professional-summary';
 import { WorkExperience } from '@/components/work-experience';
 import { Education } from '@/components/education';
-import { SkillsMatrix } from '@/components/skills-matrix';
 import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
           <WorkExperience experience={profileData.experience} />
           <Separator className="my-8" />
           <Education education={profileData.education} />
-          <Separator className="my-8" />
-          <SkillsMatrix skills={profileData.skills} />
         </div>
       </div>
     </main>
