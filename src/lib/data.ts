@@ -31,8 +31,8 @@ export const profileData: Profile = {
       startDate: "Nov 2018",
       endDate: "Jun 2024",
       description: [
-        "Served as QA Analyst for PT Fintek Karya Nusantara (LinkAja), supporting core payment migration, P2P lending, and consumer applications.",
-        "Worked on various projects including My Republic's CMS, MARS marketing automation, Pagii.co HR attendance, UOB's TMRW Digital Banking, and more.",
+        "Served as QA Analyst for Financial Technology (Fintech), supporting core payment migration, P2P lending, and consumer applications.",
+        "Worked on various projects including My Republic's Project Management, Marketing Automation Tools, HRIS Applications, One of above Digital Banking in Singapore & Indonesia, and more.",
         "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
       ]
     },
