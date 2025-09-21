@@ -107,16 +107,16 @@ export function CvHeader({ profile }: { profile: Profile }) {
           <Linkedin className="h-4 w-4" />
           <span>{profile.linkedin.replace('https://', '')}</span>
         </a>
+        <div className="flex items-center gap-3 text-muted-foreground">
+          <MapPin className="h-4 w-4 flex-shrink-0" />
+          <span>{profile.location}</span>
+        </div>
         {profile.website && (
           <a href={profile.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
             <Globe className="h-4 w-4" />
             <span>{profile.website.replace('https://', '')}</span>
           </a>
         )}
-         <div className="flex items-center gap-3 text-muted-foreground">
-            <MapPin className="h-4 w-4" />
-            <span>{profile.location}</span>
-        </div>
       </div>
        <nav className="no-print sticky top-4 z-10 -mx-4 -mt-2 w-[calc(100%+2rem)] self-center rounded-lg bg-background/80 p-2 backdrop-blur-sm sm:w-[calc(100%+4rem)]">
         <ul className="flex items-center justify-center gap-2">
