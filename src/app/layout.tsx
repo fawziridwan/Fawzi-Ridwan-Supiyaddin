@@ -4,8 +4,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'LinkedUp CV',
-  description: 'Your Professional CV, powered by LinkedIn.',
+  title: 'My Resume',
+  description: 'Fawzi Ridwan Supiyaddin',
 };
 
 export default function RootLayout({
