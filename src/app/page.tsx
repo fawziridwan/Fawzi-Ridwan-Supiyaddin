@@ -7,6 +7,7 @@ import { Education } from '@/components/education';
 import { Separator } from '@/components/ui/separator';
 import { SkillsQualifications } from '@/components/skills-qualifications';
 import { EmploymentHistory } from '@/components/employment-history';
+import { PersonalData } from '@/components/personal-data';
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
           <Education education={profileData.education} />
           <Separator className="my-8" />
           <EmploymentHistory history={profileData.employmentHistory} />
+          <Separator className="my-8" />
+          <PersonalData />
         </div>
       </div>
     </main>

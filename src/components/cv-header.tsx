@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb, MapPin, Moon, Sun } from 'lucide-react';
+import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb, MapPin, Moon, Sun, UserCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Profile } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
@@ -14,6 +14,7 @@ const navLinks = [
   { href: '#skills', label: 'Skills', icon: <Lightbulb /> },
   { href: '#education', label: 'Education', icon: <GraduationCap /> },
   { href: '#employment-history', label: 'History', icon: <History /> },
+  { href: '#personal-data', label: 'Personal', icon: <UserCircle /> },
 ];
 
 export function CvHeader({ profile }: { profile: Profile }) {
