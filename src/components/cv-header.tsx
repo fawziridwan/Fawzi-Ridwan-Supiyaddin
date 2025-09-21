@@ -55,10 +55,12 @@ export function CvHeader({ profile }: { profile: Profile }) {
           <Phone className="h-4 w-4" />
           <span>{profile.phone}</span>
         </a>
-        <a href={profile.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
-          <Globe className="h-4 w-4" />
-          <span>{profile.website.replace('https://', '')}</span>
-        </a>
+        {profile.website && (
+          <a href={profile.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
+            <Globe className="h-4 w-4" />
+            <span>{profile.website.replace('https://', '')}</span>
+          </a>
+        )}
       </div>
     </header>
   );
