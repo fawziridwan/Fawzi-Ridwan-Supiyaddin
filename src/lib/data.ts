@@ -67,15 +67,22 @@ export const profileData: Profile = {
   skills: [
     { name: "Blackbox Testing", proficiency: 5 },
     { name: "Agile & Scrum", proficiency: 5 },
-    { name: "API Testing", proficiency: 5 },
-    { name: "Postman", proficiency: 5 },
-    { name: "Jira", proficiency: 5 },
+    { name: "SIT Testing", proficiency: 5 },
+    { name: "UAT Testing", proficiency: 5 },
     { name: "Java", proficiency: 4 },
     { name: "JavaScript", proficiency: 4 },
+    { name: "Python", proficiency: 4 },
     { name: "Appium", proficiency: 4 },
-    { name: "Selenium", proficiency: 4 },
-    { name: "Cypress.js", proficiency: 3 },
-    { name: "Python", proficiency: 3 },
+    { name: "Cypress.js", proficiency: 4 },
+    { name: "Node.js", proficiency: 3 },
+    { name: "Katalon Studio", proficiency: 3 },
+    { name: "PHP", proficiency: 2 },
     { name: "Vue.js", proficiency: 2 },
+    { name: "Wordpress", proficiency: 2 },
+    { name: "Jira", proficiency: 5 },
+    { name: "Testrail", proficiency: 4 },
+    { name: "PostgreSQL", proficiency: 4 },
+    { name: "MongoDB", proficiency: 3 },
+    { name: "MySQL", proficiency: 4 }
   ]
 };
