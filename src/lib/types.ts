@@ -11,6 +11,7 @@ export type Profile = {
   experience: Experience[];
   education: Education[];
   skills: Skills;
+  employmentHistory: EmploymentHistory[];
 };
 
 export type Experience = {
@@ -28,6 +29,11 @@ export type Education = {
   fieldOfStudy: string;
   startDate: string;
   endDate: string;
+};
+
+export type EmploymentHistory = {
+  company: string;
+  dates: string;
 };
 
 export type Skills = {

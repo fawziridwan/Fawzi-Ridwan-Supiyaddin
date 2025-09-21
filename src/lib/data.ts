@@ -87,5 +87,23 @@ export const profileData: Profile = {
       languages: ["PHP", "Vue.Js", "Wordpress"],
       reporting: ["Jira", "Zephyr", "Testrail", "Spreadsheet"]
     }
-  }
+  },
+  employmentHistory: [
+    {
+      company: "PT Code Development Indonesia",
+      dates: "Jul 2024 – Now"
+    },
+    {
+      company: "PT Smooets Teknologi Outsourcing",
+      dates: "Nov 2017 – Jun 2024"
+    },
+    {
+      company: "Geeksfarm",
+      dates: "Oct 2017 – Nov 2017"
+    },
+    {
+      company: "PT Inovindo Digital Media",
+      dates: "Feb 2017 – May 2017"
+    }
+  ]
 };

@@ -6,6 +6,7 @@ import { WorkExperience } from '@/components/work-experience';
 import { Education } from '@/components/education';
 import { Separator } from '@/components/ui/separator';
 import { SkillsQualifications } from '@/components/skills-qualifications';
+import { EmploymentHistory } from '@/components/employment-history';
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
           <SkillsQualifications skills={profileData.skills} />
           <Separator className="my-8" />
           <Education education={profileData.education} />
+          <Separator className="my-8" />
+          <EmploymentHistory history={profileData.employmentHistory} />
         </div>
       </div>
     </main>
