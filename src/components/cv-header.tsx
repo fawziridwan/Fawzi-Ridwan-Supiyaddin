@@ -1,14 +1,51 @@
 
 'use client';
 
-import { Download, Globe, Linkedin, Mail, Phone, Share2 } from 'lucide-react';
+import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Profile } from '@/lib/types';
 import { ProfileCompletenessTool } from './profile-completeness-tool';
 import { useToast } from '@/hooks/use-toast';
+import { cn } from '@/lib/utils';
+import React from 'react';
+
+const navLinks = [
+  { href: '#summary', label: 'Summary', icon: <User /> },
+  { href: '#experience', label: 'Experience', icon: <Briefcase /> },
+  { href: '#skills', label: 'Skills', icon: <Lightbulb /> },
+  { href: '#education', label: 'Education', icon: <GraduationCap /> },
+  { href: '#employment-history', label: 'History', icon: <History /> },
+];
 
 export function CvHeader({ profile }: { profile: Profile }) {
   const { toast } = useToast();
+  const [activeSection, setActiveSection] = React.useState('summary');
+
+  React.useEffect(() => {
+    const sectionIds = navLinks.map(link => link.href.substring(1));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-50% 0px -50% 0px' }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
 
   const handlePrint = () => {
     window.print();
@@ -62,6 +99,26 @@ export function CvHeader({ profile }: { profile: Profile }) {
           </a>
         )}
       </div>
+       <nav className="no-print sticky top-4 z-10 -mx-4 -mt-2 w-[calc(100%+2rem)] self-center rounded-lg bg-background/80 p-2 backdrop-blur-sm sm:w-[calc(100%+4rem)]">
+        <ul className="flex items-center justify-center gap-2">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={cn(
+                  'flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors',
+                  activeSection === link.href.substring(1)
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:bg-secondary hover:text-secondary-foreground'
+                )}
+              >
+                {React.cloneElement(link.icon, { className: 'h-4 w-4' })}
+                <span className="hidden sm:inline">{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }
