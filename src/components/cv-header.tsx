@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb } from 'lucide-react';
+import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Profile } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
@@ -64,7 +64,6 @@ export function CvHeader({ profile }: { profile: Profile }) {
         <div>
           <h1 className="font-headline text-4xl font-bold text-primary">{profile.name}</h1>
           <p className="mt-1 text-lg text-muted-foreground">{profile.headline}</p>
-          <p className="mt-2 text-sm text-muted-foreground">{profile.location}</p>
         </div>
         <div className="no-print flex items-center gap-2">
           <Button variant="outline" size="sm" onClick={handleShare}>
@@ -82,13 +81,13 @@ export function CvHeader({ profile }: { profile: Profile }) {
           <Mail className="h-4 w-4" />
           <span>{profile.email}</span>
         </a>
-        <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
-          <Linkedin className="h-4 w-4" />
-          <span>{profile.linkedin.replace('https://', '')}</span>
-        </a>
         <a href={`tel:${profile.phone}`} className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
           <Phone className="h-4 w-4" />
           <span>{profile.phone}</span>
+        </a>
+        <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
+          <Linkedin className="h-4 w-4" />
+          <span>{profile.linkedin.replace('https://', '')}</span>
         </a>
         {profile.website && (
           <a href={profile.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary">
@@ -96,6 +95,10 @@ export function CvHeader({ profile }: { profile: Profile }) {
             <span>{profile.website.replace('https://', '')}</span>
           </a>
         )}
+         <div className="flex items-center gap-3 text-muted-foreground">
+            <MapPin className="h-4 w-4" />
+            <span>{profile.location}</span>
+        </div>
       </div>
        <nav className="no-print sticky top-4 z-10 -mx-4 -mt-2 w-[calc(100%+2rem)] self-center rounded-lg bg-background/80 p-2 backdrop-blur-sm sm:w-[calc(100%+4rem)]">
         <ul className="flex items-center justify-center gap-2">

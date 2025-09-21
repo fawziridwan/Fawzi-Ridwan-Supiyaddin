@@ -3,7 +3,7 @@ import type { Profile } from './types';
 
 export const profileData: Profile = {
   name: "Fawzi Ridwan Supiyaddin",
-  headline: "Quality Assurance | Test Engineer | Frontend Developer",
+  headline: "Quality Assurance | Test Engineer",
   location: "Jl. Ciganitri no 16, Jl kavling pertanian, gang mekar 1, Desa Cipagalo, Kecamatan Bojongsoang, Kabupaten Bandung, 40288, Jawa Barat, Indonesia",
   email: "fawziridwan@gmail.com",
   phone: "+62 822-1655-0540",
@@ -11,6 +11,18 @@ export const profileData: Profile = {
   website: "",
   summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
+    {
+      title: "Frontend Developer",
+      company: "Geeksfarm",
+      location: "Bandung, Indonesia",
+      startDate: "Oct 2017",
+      endDate: "Nov 2017",
+      description: [
+        "Responsible for building responsive web applications with a focus on user experience.",
+        "Collaborated with designers and backend developers to implement new features.",
+        "Utilized technologies like Vue.js, React, and various CSS frameworks."
+      ]
+    },
     {
       title: "Test Engineer",
       company: "PT Code Development Indonesia",
