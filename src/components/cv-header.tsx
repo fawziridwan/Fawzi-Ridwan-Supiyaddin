@@ -4,7 +4,6 @@
 import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Profile } from '@/lib/types';
-import { ProfileCompletenessTool } from './profile-completeness-tool';
 import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
 import React from 'react';
@@ -68,7 +67,6 @@ export function CvHeader({ profile }: { profile: Profile }) {
           <p className="mt-2 text-sm text-muted-foreground">{profile.location}</p>
         </div>
         <div className="no-print flex items-center gap-2">
-          <ProfileCompletenessTool profile={profile} />
           <Button variant="outline" size="sm" onClick={handleShare}>
             <Share2 className="mr-2 h-4 w-4" />
             Share
