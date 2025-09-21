@@ -12,27 +12,16 @@ export const profileData: Profile = {
   summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
     {
-      title: "Frontend Developer",
-      company: "Geeksfarm",
-      location: "Bandung, Indonesia",
-      startDate: "Oct 2017",
-      endDate: "Nov 2017",
+      title: "Test Engineer",
+      company: "PT Code Development Indonesia",
+      location: "Jakarta, Indonesia",
+      startDate: "Jul 2024",
+      endDate: "Present",
       description: [
-        "Responsible for building responsive web applications with a focus on user experience.",
-        "Collaborated with designers and backend developers to implement new features.",
-        "Utilized technologies like Vue.js, React, and various CSS frameworks."
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "PT. Smooets Teknologi Outsourcing",
-      location: "Bandung, West Java",
-      startDate: "Nov 2017",
-      endDate: "Jul 2018",
-      description: [
-        "Support Development Web application in Hongkong-based Cleaning Service Management using Vue.js, Graphql, Amazon RDS(MySQL) & Serverless",
-        "Meet with CEO for Research & Learning WordPress with Elementor & Custom Post type & Taxonomy for Development WordPress Project",
-        "Development loyalty point feature & reporting for Project Website Jewellery using WooCommerce"
+        "Senior SIT Tester for PT Bank Danamon Tbk, supporting D-Bank Pro 2.0.",
+        "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
+        "Conducted testing on Android & iOS mobile applications.",
+        "Utilized Selenium and Appium with Java for test automation."
       ]
     },
     {
@@ -48,16 +37,27 @@ export const profileData: Profile = {
       ]
     },
     {
-      title: "Test Engineer",
-      company: "PT Code Development Indonesia",
-      location: "Jakarta, Indonesia",
-      startDate: "Jul 2024",
-      endDate: "Present",
+      title: "Frontend Developer",
+      company: "PT. Smooets Teknologi Outsourcing",
+      location: "Bandung, West Java",
+      startDate: "Nov 2017",
+      endDate: "Jul 2018",
       description: [
-        "Senior SIT Tester for PT Bank Danamon Tbk, supporting D-Bank Pro 2.0.",
-        "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
-        "Conducted testing on Android & iOS mobile applications.",
-        "Utilized Selenium and Appium with Java for test automation."
+        "Support Development Web application in Hongkong-based Cleaning Service Management using Vue.js, Graphql, Amazon RDS(MySQL) & Serverless",
+        "Meet with CEO for Research & Learning WordPress with Elementor & Custom Post type & Taxonomy for Development WordPress Project",
+        "Development loyalty point feature & reporting for Project Website Jewellery using WooCommerce"
+      ]
+    },
+    {
+      title: "Frontend Developer",
+      company: "Geeksfarm",
+      location: "Bandung, Indonesia",
+      startDate: "Oct 2017",
+      endDate: "Nov 2017",
+      description: [
+        "Responsible for building responsive web applications with a focus on user experience.",
+        "Collaborated with designers and backend developers to implement new features.",
+        "Utilized technologies like Vue.js, React, and various CSS frameworks."
       ]
     }
   ],
