@@ -2,66 +2,80 @@
 import type { Profile } from './types';
 
 export const profileData: Profile = {
-  name: "Alex Doe",
-  headline: "Senior Software Engineer | Full-Stack Developer | Cloud Enthusiast",
-  location: "San Francisco, CA",
-  email: "alex.doe@example.com",
-  phone: "+1 (555) 123-4567",
-  linkedin: "https://linkedin.com/in/alexdoe",
-  website: "https://alexdoe.dev",
-  summary: "Results-driven Senior Software Engineer with over 8 years of experience in designing, developing, and deploying scalable web applications. Proficient in a wide range of technologies with a passion for clean code and solving complex problems. Adept at leading development teams and collaborating with cross-functional stakeholders to deliver high-quality products. Seeking to leverage expertise in a challenging role with a forward-thinking company.",
+  name: "Fawzi Ridwan Supiyaddin",
+  headline: "Quality Assurance | Test Engineer | Frontend Developer",
+  location: "Indonesia",
+  email: "fawzi.ridwan@example.com",
+  phone: "+62 123 456 7890",
+  linkedin: "https://linkedin.com/in/fawziridwans",
+  website: "https://fawziridwan.dev",
+  summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
     {
-      title: "Senior Software Engineer",
-      company: "Innovatech Solutions Inc.",
-      location: "San Francisco, CA",
-      startDate: "Jan 2020",
+      title: "Test Engineer",
+      company: "PT Code Development Indonesia",
+      location: "Jakarta, Indonesia",
+      startDate: "Jul 2024",
       endDate: "Present",
       description: [
-        "Led a team of 5 engineers in the development of a new SaaS platform, increasing customer engagement by 40%.",
-        "Architected and implemented a microservices-based backend using Node.js, TypeScript, and Docker, deployed on AWS.",
-        "Developed and maintained the front-end application using React, Redux, and Tailwind CSS, improving performance by 25%.",
-        "Mentored junior developers, conducted code reviews, and established best practices for the engineering team."
+        "Senior SIT Tester for PT Bank Danamon Tbk, supporting D-Bank Pro 2.0.",
+        "Performed API testing using Postman and managed databases with Dbeaver and PostgreSQL.",
+        "Conducted testing on Android & iOS mobile applications.",
+        "Utilized Selenium and Appium with Java for test automation."
       ]
     },
     {
-      title: "Software Engineer",
-      company: "TechCorp",
-      location: "Palo Alto, CA",
-      startDate: "Jun 2017",
-      endDate: "Dec 2019",
+      title: "Quality Assurance Analyst",
+      company: "PT Smoets Teknologi Outsourcing",
+      location: "Jakarta, Indonesia",
+      startDate: "Nov 2018",
+      endDate: "Jun 2024",
       description: [
-        "Contributed to the development of a high-traffic e-commerce website, using Ruby on Rails and PostgreSQL.",
-        "Collaborated with product managers and designers to implement new features and improve user experience.",
-        "Wrote and maintained unit and integration tests, achieving 90% code coverage."
+        "Served as QA Analyst for PT Fintek Karya Nusantara (LinkAja), supporting core payment migration, P2P lending, and consumer applications.",
+        "Worked on various projects including My Republic's CMS, MARS marketing automation, Pagii.co HR attendance, UOB's TMRW Digital Banking, and more.",
+        "Gained experience with a wide array of tools and technologies including Postman, gRPC, Kubernetes, JMeter, Selenium, Cypress, and various databases."
+      ]
+    },
+    {
+      title: "Frontend Developer",
+      company: "Clean & Go",
+      location: "Hong Kong (Remote)",
+      startDate: "2018",
+      endDate: "2019",
+      description: [
+        "Developed the frontend for a cleaning service website based in Hong Kong.",
+        "Utilized Vue.js, GraphQL, and worked with MySQL and DynamoDB databases."
       ]
     }
   ],
   education: [
     {
-      institution: "Stanford University",
-      degree: "Master of Science",
-      fieldOfStudy: "Computer Science",
-      startDate: "2015",
+      institution: "Politeknik & STMIK Komputer Niaga LPKIA",
+      degree: "Bachelor's Degree",
+      fieldOfStudy: "Information Technology",
+      startDate: "2013",
       endDate: "2017"
     },
     {
-      institution: "University of California, Berkeley",
-      degree: "Bachelor of Science",
-      fieldOfStudy: "Electrical Engineering and Computer Sciences",
-      startDate: "2011",
-      endDate: "2015"
+      institution: "Vocation High School Medikacom",
+      degree: "Vocational",
+      fieldOfStudy: "Software Engineering",
+      startDate: "2010",
+      endDate: "2013"
     }
   ],
   skills: [
-    { name: "TypeScript", proficiency: 5 },
-    { name: "React", proficiency: 5 },
-    { name: "Node.js", proficiency: 5 },
-    { name: "AWS", proficiency: 4 },
-    { name: "Docker", proficiency: 4 },
-    { name: "SQL (PostgreSQL)", proficiency: 4 },
-    { name: "System Design", proficiency: 4 },
-    { name: "CI/CD", proficiency: 3 },
+    { name: "Blackbox Testing", proficiency: 5 },
+    { name: "Agile & Scrum", proficiency: 5 },
+    { name: "API Testing", proficiency: 5 },
+    { name: "Postman", proficiency: 5 },
+    { name: "Jira", proficiency: 5 },
+    { name: "Java", proficiency: 4 },
+    { name: "JavaScript", proficiency: 4 },
+    { name: "Appium", proficiency: 4 },
+    { name: "Selenium", proficiency: 4 },
+    { name: "Cypress.js", proficiency: 3 },
     { name: "Python", proficiency: 3 },
+    { name: "Vue.js", proficiency: 2 },
   ]
 };
