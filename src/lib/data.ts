@@ -47,6 +47,18 @@ export const profileData: Profile = {
         "Collaborated with designers and backend developers to implement new features.",
         "Utilized technologies like Vue.js, React, and various CSS frameworks."
       ]
+    },
+    {
+      title: "Frontend Developer",
+      company: "PT. Smooets Teknologi Outsourcing",
+      location: "Bandung, West Java",
+      startDate: "2017",
+      endDate: "2018",
+      description: [
+        "Support Development Web application in Hongkong-based Cleaning Service Management using Vue.js, Graphql, Amazon RDS(MySQL) & Serverless",
+        "Meet with CEO for Research & Learning WordPress with Elementor & Custom Post type & Taxonomy for Development WordPress Project",
+        "Development loyalty point feature & reporting for Project Website Jewellery using WooCommerce"
+      ]
     }
   ],
   education: [
