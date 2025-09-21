@@ -7,7 +7,7 @@ export const profileData: Profile = {
   location: "Indonesia",
   email: "fawzi.ridwan@example.com",
   phone: "+62 123 456 7890",
-  linkedin: "https://linkedin.com/in/fawziridwans",
+  linkedin: "https://www.linkedin.com/in/fawzi-ridwan-supiyaddin-431322b5/",
   website: "https://fawziridwan.dev",
   summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
