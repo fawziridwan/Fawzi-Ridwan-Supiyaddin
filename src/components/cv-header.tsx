@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb, MapPin } from 'lucide-react';
+import { Download, Globe, Linkedin, Mail, Phone, Share2, Briefcase, User, GraduationCap, History, Lightbulb, MapPin, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Profile } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
@@ -19,6 +19,19 @@ const navLinks = [
 export function CvHeader({ profile }: { profile: Profile }) {
   const { toast } = useToast();
   const [activeSection, setActiveSection] = React.useState('summary');
+  const [theme, setTheme] = React.useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  React.useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
 
   React.useEffect(() => {
     const sectionIds = navLinks.map(link => link.href.substring(1));
@@ -66,6 +79,11 @@ export function CvHeader({ profile }: { profile: Profile }) {
           <p className="mt-1 text-lg text-muted-foreground">{profile.headline}</p>
         </div>
         <div className="no-print flex items-center gap-2">
+           <Button variant="outline" size="icon" onClick={toggleTheme}>
+            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <span className="sr-only">Toggle theme</span>
+          </Button>
           <Button variant="outline" size="sm" onClick={handleShare}>
             <Share2 className="mr-2 h-4 w-4" />
             Share
