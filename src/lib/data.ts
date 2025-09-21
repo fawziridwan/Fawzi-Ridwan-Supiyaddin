@@ -12,17 +12,6 @@ export const profileData: Profile = {
   summary: "Over 5 years of experience as a Quality Assurance and Test Engineer, with 1 year of experience as a Frontend Developer. Skilled in both manual and automated testing for web and mobile applications, API testing, and working within Agile and Waterfall methodologies.",
   experience: [
     {
-      title: "Frontend Developer",
-      company: "Clean & Go",
-      location: "Hong Kong (Remote)",
-      startDate: "2018",
-      endDate: "2019",
-      description: [
-        "Developed the frontend for a cleaning service website based in Hong Kong.",
-        "Utilized Vue.js, GraphQL, and worked with MySQL and DynamoDB databases."
-      ]
-    },
-    {
       title: "Test Engineer",
       company: "PT Code Development Indonesia",
       location: "Jakarta, Indonesia",
