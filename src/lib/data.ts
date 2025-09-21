@@ -27,7 +27,7 @@ export const profileData: Profile = {
     {
       title: "Quality Assurance Analyst",
       company: "PT Smoets Teknologi Outsourcing",
-      location: "Jakarta, Indonesia",
+      location: "Bandung, Indonesia",
       startDate: "Nov 2018",
       endDate: "Jun 2024",
       description: [
