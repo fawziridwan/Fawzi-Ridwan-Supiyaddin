@@ -4,7 +4,7 @@ import type { Profile } from './types';
 export const profileData: Profile = {
   name: "Fawzi Ridwan Supiyaddin",
   headline: "Quality Assurance | Test Engineer | Frontend Developer",
-  location: "Indonesia",
+  location: "Jl. Ciganitri no 16, Jl kavling pertanian, gang mekar 1, Desa Cipagalo, Kecamatan Bojongsoang, Kabupaten Bandung, 40288, Jawa Barat, Indonesia",
   email: "fawziridwan@gmail.com",
   phone: "+62 822-1655-0540",
   linkedin: "https://www.linkedin.com/in/fawzi-ridwan-supiyaddin-431322b5/",
